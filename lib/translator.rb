@@ -2,7 +2,7 @@
 require "yaml"
 def load_library(file_path)
   # code goes here
-  emoticons_yml = YAML.load_file('emotions.yml')
+  emoticons_yml = YAML.load_file(file_path)
 end
 
 def get_japanese_emoticon
