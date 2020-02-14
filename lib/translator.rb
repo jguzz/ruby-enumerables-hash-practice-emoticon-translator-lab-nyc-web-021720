@@ -4,7 +4,9 @@ def load_library(file_path)
   # code goes here
   emoticons_yml = YAML.load_file(file_path)
   emot = {"get_meaning": {}, "get_emoticon": {}}
-  library.each
+  emoticons_yml.each map |i, v|
+    emot[:get_meaning][value][1]
+  end
 end
 
 def get_japanese_emoticon
