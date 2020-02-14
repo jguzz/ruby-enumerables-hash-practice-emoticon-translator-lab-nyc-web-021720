@@ -7,6 +7,7 @@ def load_library(file_path)
   emoticons_yml.each do |i, v|
     emot[:get_meaning][v][1] = i
   end
+  emot
 end
 
 def get_japanese_emoticon
