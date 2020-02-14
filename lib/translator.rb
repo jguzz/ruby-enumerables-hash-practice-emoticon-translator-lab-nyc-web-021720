@@ -7,7 +7,7 @@ def load_library(file_path)
   emot = {"get_meaning" => {}, "get_emoticon" => {}}
   emoticons_yml.each do |i, v|
     emot["get_meaning"][v[1]] = i
-    emot[get_emoticon][v[0]] = v[1]
+    emot["get_emoticon"][v[0]] = v[1]
     binding.pry
   end
   emot
