@@ -18,7 +18,6 @@ def get_japanese_emoticon(file_path, emoticon)
   library = load_library(file_path)
   library.each do |type, emotes|
     emotes.each do |library_emoticon, style|
-      binding.pry
       if emoticon == library_emoticon
         x = library_emoticon
         binding.pry
