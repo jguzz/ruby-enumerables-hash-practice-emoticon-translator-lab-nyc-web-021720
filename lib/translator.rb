@@ -19,7 +19,7 @@ def get_japanese_emoticon(file_path, emoticon)
   library.each do |type, emotes|
     emotes.each do |library_emoticon|
       if emoticon == library_emoticon
-        library_emoticon[1]
+        x = library_emoticon[1]
       end
     end
   end
