@@ -14,15 +14,12 @@ end
 
 def get_japanese_emoticon(file_path, english_emoticon)
   # code goes here
+  japanese_emoticon = ""
   library = load_library(file_path)
-  library.each do |type, emotes|
-    emotes.each do |library_emoticon, style|
-
-      if emoticon == library_emoticon
-        x = library_emoticon
-        binding.pry
-      end
-    end
+  if library["get_emoticon"].include?(english_emoticon)
+    library["get_emoticon"][english_emoticon]
+  else
+    "Sorry, that emoticon was not found"
   end
   x
 end
