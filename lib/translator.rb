@@ -8,6 +8,7 @@ def load_library(file_path)
   emoticons_yml.each do |i, v|
     emot["get_meaning"][v[1]] = i
     emot[get_emoticon][v[0]]
+    binding.pry
   end
   emot
 end
